@@ -1,0 +1,81 @@
+.attribution { font-size: 11px; text-align: center;
+   position: fixed; bottom: 0; left: 30%; right: 30%;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  font-size: 18px;
+  background-color: hsl(226, 43%, 10%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#left {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+
+.period {
+  margin: 18px 24px;
+  color:hsl(235, 45%, 61%);
+  font-size: 15px;
+}
+
+.period:hover {
+  color: white;
+}
+
+.period:nth-child(3) {
+  margin-bottom: 28px;
+}
+
+#left-top {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 10px;
+  padding: 24px 70px 60px 24px ;
+  color: white;
+}
+
+#user-img {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 60px;
+}
+
+#report-for {
+  font-size: 12px;
+  color: rgb(199, 198, 198);
+  margin: 24px 0px 4px 0px;
+}
+
+#user-name {
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(242, 239, 239);
+}
+.card-info {
+  background-color: hsl(235, 46%, 20%);
+}
+
+

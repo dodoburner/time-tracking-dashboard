@@ -5,76 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <div id="left">
+      <div id="left-top">
+        <img id="user-img" src="images/image-jeremy.png" alt="">
+        <p id="report-for">Report for</p>
+        <p id="user-name">Jeremy <br> Robson</p>
+      </div>
+      
+      <div>
+        <p class="period">Daily</p>
+        <p class="period">Weekly</p>
+        <p class="period">Monthly</p>
+      </div>
+    </div>
+   
+    <div id="grid">
+      <div class="work">
+        <div class="card-info">
+          <p>Work</p>
+          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          <p class="time-weekly">32hrs</p>
+          <p class="previous-weekly">Last Week - 36hrs/p>
+        </div>
+      </div>
+    
+      <div class="play">
+        <div class="card-info">
+          <p>Play</p>
+          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          <p class="time-weekly">10hrs</p>
+          <p class="previous-weekly">Last Week - 8hrs/p>
+        </div>
+      </div>
+    
+      <div class="study">
+        <div class="card-info">
+          <p>Study</p>
+          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          <p class="time-weekly">4hrs</p>
+          <p class="previous-weekly">Last Week - 7hrs/p>
+        </div>
+      </div>
+    
+      <div class="exercise">
+        <div class="card-info">
+          <p>Exercise</p>
+          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          <p class="time-weekly">4hrs</p>
+          <p class="previous-weekly">Last Week - 5hrs/p>
+        </div>
+      </div>
+    
+      <div class="social">
+        <div class="card-info">
+          <p>Social</p>
+          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          <p class="time-weekly">5hrs</p>
+          <p class="previous-weekly">Last Week - 10hrs/p>
+        </div>
+      </div>
+    
+      <div class="self-care">
+        <div class="card-info">
+          <p>Self Care</p>
+          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          <p class="time-weekly">2hrs</p>
+          <p class="previous-weekly">Last Week - 2hrs/p>
+        </div>
+      </div>
+    </div>
+  </main>
+ 
+ 
+ 
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+ 
+ 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Dorian</a>.
   </div>
 </body>
 </html>
