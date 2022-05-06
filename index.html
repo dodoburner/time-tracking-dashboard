@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Time tracking dashboard</title>
-
+  <script src="js.js" defer></script>
 </head>
 <body>
   <main>
@@ -22,64 +22,142 @@
       </div>
       
       <div>
-        <p class="period">Daily</p>
-        <p class="period">Weekly</p>
-        <p class="period">Monthly</p>
+        <p class="period" id="period-daily">Daily</p>
+        <p class="period" id="period-weekly">Weekly</p>
+        <p class="period" id="period-monthly">Monthly</p>
       </div>
     </div>
    
     <div id="grid">
-      <div class="work">
+      <div class="card" id="work">
+        <img class="card-img" src="images/icon-work.svg" alt="">
         <div class="card-info">
-          <p>Work</p>
-          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
-          <p class="time-weekly">32hrs</p>
-          <p class="previous-weekly">Last Week - 36hrs/p>
+          <div class="name-elipsis-div">
+            <p class="card-name">Work</p>
+            <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="weekly">
+            <p class="time">32hrs</p>
+            <p class="previous">Last Week - 36hrs</p>
+          </div>
+          <div class="daily">
+            <p class="time">5hrs</p>
+            <p class="previous">Previous - 7hrs</p>
+          </div>
+          <div class="monthyl">
+            <p class="time">103hrs</p>
+            <p class="previous">Last Month - 128hrs</p>
+          </div>
         </div>
       </div>
     
-      <div class="play">
+      <div class="card" id="play">
+        <img class="card-img" src="images/icon-play.svg" alt="">
         <div class="card-info">
-          <p>Play</p>
-          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
-          <p class="time-weekly">10hrs</p>
-          <p class="previous-weekly">Last Week - 8hrs/p>
+          <div class="name-elipsis-div">
+            <p class="card-name">Play</p>
+            <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          </div>
+         <div class="weekly">
+          <p class="time">10hrs</p>
+          <p class="previous">Last Week - 8hrs</p>
+         </div> 
+         <div class="daily">
+          <p class="time">1hr</p>
+          <p class="previous">Previous - 2hrs</p>
+        </div>
+        <div class="monthyl">
+          <p class="time">23hrs</p>
+          <p class="previous">Last Month - 29hrs</p>
+        </div>
         </div>
       </div>
     
-      <div class="study">
+      <div class="card" id="study">
+        <img class="card-img" src="images/icon-study.svg" alt="">
         <div class="card-info">
-          <p>Study</p>
+          <div class="name-elipsis-div">
+            <p class="card-name">Study</p>
           <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
-          <p class="time-weekly">4hrs</p>
-          <p class="previous-weekly">Last Week - 7hrs/p>
+          </div>
+          <div class="weekly">
+            <p class="time">4hrs</p>
+            <p class="previous">Last Week - 7hrs</p>
+          </div>
+          <div class="daily">
+            <p class="time">0hrs</p>
+            <p class="previous">Previous - 1hr</p>
+          </div>
+          <div class="monthyl">
+            <p class="time">13hrs</p>
+            <p class="previous">Last Month - 19hrs</p>
+          </div>
         </div>
       </div>
     
-      <div class="exercise">
+      <div class="card" id="exercise">
+        <img class="card-img" src="images/icon-exercise.svg" alt="">
         <div class="card-info">
-          <p>Exercise</p>
+          <div class="name-elipsis-div">
+            <p class="card-name">Exercise</p>
+            <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="weekly">
+            <p class="time">4hrs</p>
+            <p class="previous">Last Week - 5hrs</p>
+          </div>
+          <div class="daily">
+            <p class="time">1hr</p>
+            <p class="previous">Previous - 1hr</p>
+          </div>
+          <div class="monthyl">
+            <p class="time">11hrs</p>
+            <p class="previous">Last Month - 18hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="social">
+        <img class="card-img" src="images/icon-social.svg" alt="">
+        <div class="card-info">
+          <div class="name-elipsis-div">
+            <p class="card-name">Social</p>
           <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
-          <p class="time-weekly">4hrs</p>
-          <p class="previous-weekly">Last Week - 5hrs/p>
+          </div>
+          <div class="weekly">
+            <p class="time">5hrs</p>
+            <p class="previous">Last Week - 10hrs</p>
+          </div>
+          <div class="daily">
+            <p class="time">1hr</p>
+            <p class="previous">Previous - 3hrs</p>
+          </div>
+          <div class="monthyl">
+            <p class="time">10hrs</p>
+            <p class="previous">Last Month - 23hrs</p>
+          </div>
         </div>
       </div>
     
-      <div class="social">
+      <div class="card" id="self-care">
+        <img class="card-img" src="images/icon-self-care.svg" alt="">
         <div class="card-info">
-          <p>Social</p>
-          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
-          <p class="time-weekly">5hrs</p>
-          <p class="previous-weekly">Last Week - 10hrs/p>
-        </div>
-      </div>
-    
-      <div class="self-care">
-        <div class="card-info">
-          <p>Self Care</p>
-          <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
-          <p class="time-weekly">2hrs</p>
-          <p class="previous-weekly">Last Week - 2hrs/p>
+          <div class="name-elipsis-div">
+            <p class="card-name">Self Care</p>
+            <img class="elipsis-img" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="weekly">
+            <p class="time">2hrs</p>
+            <p class="previous">Last Week - 2hrs</p>
+          </div>
+          <div class="daily">
+            <p class="time">0hrs</p>
+            <p class="previous">Previous - 1hrs</p>
+          </div>
+          <div class="monthyl">
+            <p class="time">7hrs</p>
+            <p class="previous">Last Month - 11hrs</p>
+          </div>
         </div>
       </div>
     </div>
@@ -97,3 +175,6 @@
   </div>
 </body>
 </html>
+
+
+

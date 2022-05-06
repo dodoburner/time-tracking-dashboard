@@ -14,21 +14,18 @@ body {
   max-width: 1440px;
   font-size: 18px;
   background-color: hsl(226, 43%, 10%);
+  padding-top: 140px;
+ 
 }
 
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  
 }
 
 p {
   margin: 0;
-}
-
-#grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #left {
@@ -42,18 +39,23 @@ p {
   font-size: 15px;
 }
 
+#period-weekly {
+  color:white
+}
+
 .period:hover {
-  color: white;
+  color: white !important;
+  cursor: pointer !important;
 }
 
 .period:nth-child(3) {
-  margin-bottom: 28px;
+  margin-bottom: 10px
 }
 
 #left-top {
   background-color: hsl(246, 80%, 60%);
   border-radius: 10px;
-  padding: 24px 70px 60px 24px ;
+  padding: 24px 70px 70px 24px ;
   color: white;
 }
 
@@ -74,8 +76,103 @@ p {
   font-weight: 300;
   color: rgb(242, 239, 239);
 }
+
+
+/*----------------------------------------
+------------------------------------------
+ -------------GRID STARTS HERE-------------
+ -------------------------------------------
+ ------------------------------------------- */
+
+ #grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-left: 20px;
+}
+
+.card {
+  background-color: hsl(235, 46%, 20%);
+  position: relative;
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.card-img {
+  position: absolute;
+  right: 15px;
+  top: -3px;
+  width: 50px;
+}
+
+.card-name {
+  color: white; 
+}
+
 .card-info {
   background-color: hsl(235, 46%, 20%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.card-info:hover {
+  background-color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+
+.name-elipsis-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.time {
+  font-size: 44px;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.previous {
+  color: hsl(236, 100%, 87%);
+  font-size: 14px;
 }
 
 
+#work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+#play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+#study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+#exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+#social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+#self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.daily, .monthyl {
+  display: none;
+}
